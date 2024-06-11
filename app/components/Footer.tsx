@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import React from 'react'
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -8,7 +10,8 @@ const Footer = () => {
                 <p>© 2024 <a href="/">Sean™</a>. All Rights Reserved.</p>
             </div>
             <div>
-                <a href="https://github.com/seanchuatech" target="_blank"><span>GitHub</span></a>
+            
+                <Link href="https://github.com/seanchuatech" target="_blank" className='flex gap-1 items-center'><FaGithub /><span>GitHub</span></Link>
             </div>
         </div>
     </footer>
