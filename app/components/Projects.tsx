@@ -4,13 +4,13 @@ import { FaHtml5 } from 'react-icons/fa6'
 
 const Projects = () => {
   return (
-    <section className="bg-slate-700">
+    <section className="">
         <div className="container mx-auto p-4 py-20">
             <h1 className="mb-4 text-5xl font-medium">
                 Projects 
             </h1>
             <div className="flex gap-4">
-            <div className='bg-gray-800 p-5 border-2 border-slate-500 rounded-md'>
+                <div className='bg-gray-900 p-5 border-2 border-slate-800 rounded-md'>
                     <Image
                         src="/coding.webp"
                         alt="Picture of the author"
@@ -31,7 +31,7 @@ const Projects = () => {
                     <Link href={'/'} className=' pl-2' >Github</Link>
                 </div>
 
-                <div className='bg-gray-800 p-5 border-2 border-slate-500 rounded-md'>
+                <div className='bg-gray-900 p-5 border-2 border-slate-800 rounded-md'>
                     <Image
                         src="/coding.webp"
                         alt="Picture of the author"
@@ -52,7 +52,7 @@ const Projects = () => {
                     <Link href={'/'} className=' pl-2' >Github</Link>
                 </div>
 
-                <div className='bg-gray-800 p-5 border-2 border-slate-500 rounded-md'>
+                <div className='bg-gray-900 p-5 border-2 border-slate-800 rounded-md'>
                     <Image
                         src="/coding.webp"
                         alt="Picture of the author"

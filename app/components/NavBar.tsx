@@ -6,12 +6,12 @@ import { useState, useEffect } from 'react'; // For dynamic header
 const NavBar = () => {
 
 const links = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/" },
-    { label: "Skills", href: "/" },
-    { label: "Projects", href: "/" },
-    { label: "Strategy", href: "/" },
-    { label: "Contact", href: "/" },
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    { label: "Skills", href: "/#skills" },
+    // { label: "Projects", href: "/#projects" },
+    { label: "Strategy", href: "/#strategy" },
+    { label: "Contact", href: "/#contact" },
     ];
 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -25,10 +25,10 @@ const links = [
     }, []);
 
   return (
-    <nav className="w-screen border-b border-slate-700 fixed bg-slate-700/35">
+    <nav className="w-screen border-b fixed border-slate-700 bg-slate-700/30">
         <div className="flex flex-wrap justify-between container mx-auto p-4">
-            <div>
-                <Link href="/">Sean.</Link> 
+            <div className="text-lg font-medium">
+                <Link href="/">seanchua.dev</Link> 
             </div>
             <ul className="flex gap-5">
                 {links.map((link) => (

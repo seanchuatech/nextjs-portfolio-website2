@@ -10,7 +10,7 @@ interface ButtonProps {
     return (
       <button
         className={`
-          px-5 py-3 rounded-md tracking-wide bg-blue-700 hover:bg-blue-800 text-white 
+          px-5 py-3 rounded-md tracking-wide bg-blue-800 hover:bg-blue-900 text-white 
           transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500
           ${className}
         `}

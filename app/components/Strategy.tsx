@@ -2,18 +2,18 @@ import Image from 'next/image'
 
 const Strategy = () => {
   return (
-    <section className="bg-slate-600">
+    <section className="" id='strategy'>
         <div className="container mx-auto p-4 py-20">
             <h1 className="mb-4 text-5xl font-medium">
                 Strategy 
             </h1>
             <div className="flex gap-4">
-                <div className='w-1/3 aspect-square bg-gray-800 p-5 border-2 border-slate-500 rounded-md'>
+                <div className='w-1/3 aspect-square bg-gray-900 p-5 border-2 border-slate-800 rounded-md'>
                     <Image
-                        src="/coding.webp"
+                        src="/collaborating.png"
                         alt="Picture of the author"
                         width={600}
-                        height={600}
+                        height={900}
                         className='rounded-md'
                     />
                     <h2 className='p-2 text-lg font-medium'>Planning & Analysis</h2>
@@ -22,9 +22,9 @@ const Strategy = () => {
                     </p>
                 </div>
 
-                <div className='w-1/3 aspect-square bg-gray-800 p-5 border-2 border-slate-500 rounded-md'>
+                <div className='w-1/3 aspect-square bg-gray-900 p-5 border-2 border-slate-800 rounded-md'>
                     <Image
-                        src="/coding.webp"
+                        src="/coding.png"
                         alt="Picture of the author"
                         width={600}
                         height={600}
@@ -36,12 +36,12 @@ const Strategy = () => {
                     </p>
                 </div>
 
-                <div className='w-1/3 aspect-square bg-gray-800 p-5 border-2 border-slate-500 rounded-md'>
+                <div className='w-1/3 aspect-square bg-gray-900 p-5 border-2 border-slate-800 rounded-md'>
                     <Image
-                        src="/coding.webp"
+                        src="/presenting.png"
                         alt="Picture of the author"
                         width={600}
-                        height={600}
+                        height={200}
                         className='rounded-md'
                     />
                     <h2 className='p-2 text-lg font-medium'>Testing & Deployment</h2>
@@ -49,7 +49,6 @@ const Strategy = () => {
                         Rigorous testing ensures a seamless experience for all users. Once I&apos;m confident in its functionality, I&apos;ll launch my site and share it with the world.
                     </p>
                 </div>
-
             </div>
         </div>
     </section>
