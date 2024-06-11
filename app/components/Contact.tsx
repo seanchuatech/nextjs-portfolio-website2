@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Contact = () => {
   return (
     <section className="" id='contact'>
-        <div className="container mx-auto p-4 py-20">
+        <div className="container mx-auto px-5 py-20">
             <h1 className="mb-4 text-5xl font-medium">
                 Contact 
             </h1>
