@@ -34,7 +34,7 @@ const links = [
             </div>
 
             {/* Desktop Menu */}
-            <ul className="hidden md:flex gap-5">
+            <ul className="hidden sm:flex gap-5">
                 {links.map((link) => (
                     <li key={link.href} className="text-base hover:text-zinc-300 transition duration-500">
                         <Link href={link.href}>{link.label}</Link>
@@ -43,18 +43,18 @@ const links = [
             </ul>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-                    {isMobileMenuOpen ? <IoClose className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
-                </button>
+            <button className="sm:hidden" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+                {isMobileMenuOpen ? <IoClose className="h-6 w-6" /> : <IoMenu className="h-6 w-6" />}
+            </button>
 
-                {/* Mobile Menu */}
-                <ul className={`md:hidden absolute top-full left-0 w-full bg-slate-800 z-10 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-                    {links.map((link) => (
-                        <li key={link.href} className="text-base text-center py-2 hover:bg-slate-900">
-                            <Link href={link.href} onClick={() => setIsMobileMenuOpen(false)}>{link.label}</Link>
-                        </li>
-                    ))}
-                </ul>
+            {/* Mobile Menu */}
+            <ul className={`sm:hidden absolute top-full left-0 w-full bg-slate-800 z-10 ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+                {links.map((link) => (
+                    <li key={link.href} className="text-base text-right py-2 pr-5 hover:bg-slate-900">
+                        <Link href={link.href} onClick={() => setIsMobileMenuOpen(false)}>{link.label}</Link>
+                    </li>
+                ))}
+            </ul>
         </div>
     </nav>
   )
